@@ -45,24 +45,6 @@ header {
   margin: 0;
 }
 
-/*.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-*/
-
-.container {
-  width: 428px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 h1,
 h2,
 h3,
@@ -89,6 +71,11 @@ button {
 
 /*логотип*/
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
 .logo-top {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -111,6 +98,29 @@ button {
 }
 
 /* navbar */
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+.navigations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu-open {
+  background-color: blueviolet;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
 
 /*
 
