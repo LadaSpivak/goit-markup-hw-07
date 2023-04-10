@@ -13,7 +13,6 @@
 }
 
 .mobile-menu-container {
-  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -68,14 +67,9 @@
 .nav-menu {
   padding-top: 80px;
   padding-left: 40px;
-}
-
-.nav-list-menu {
-  margin-bottom: 40px;
-}
-
-.nav-list-menu:last-child {
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .nav-item-menu {
@@ -103,13 +97,14 @@
 
 .contact-list-menu {
   padding-left: 40px;
+  padding-bottom: 48px;
 }
 
 .contact-item-phone {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -136,7 +131,7 @@
 
 .social-menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .card-social-menu {
