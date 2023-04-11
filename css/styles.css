@@ -129,10 +129,6 @@ button {
     display: flex;
   }
 
-  .menu__link__active {
-    color: #404bbf;
-  }
-
   .menu__link__active::after {
     content: "";
     position: absolute;
@@ -143,6 +139,10 @@ button {
     background: var(--ocean-color);
     border-radius: 2px;
     top: 44px;
+  }
+
+  .menu__link__active {
+    color: var(--ocean-color);
   }
 
   .nav-item {
@@ -197,7 +197,7 @@ button {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav-item:focus,
+  /*.nav-item:focus,
   .nav-item:hover,
   .contact-item:focus,
   .contact-item:hover {
