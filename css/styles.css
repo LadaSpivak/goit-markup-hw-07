@@ -507,6 +507,7 @@ button {
 
   .feature-catalog:last-child {
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   .feature-title {
@@ -595,6 +596,7 @@ button {
     width: 264px;
     flex-wrap: wrap;
     margin-right: 24px;
+    margin-bottom: 0;
   }
 
   .feature-catalog::before {
@@ -669,39 +671,46 @@ button {
 
 /*doing*/
 
-.doing {
-  background-color: var(--white-color);
-  padding-bottom: 120px;
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .doing {
+    display: none;
+  }
 }
 
-.doing-catalog {
-  margin-right: 24px;
+@media screen and (min-width: 1200px) {
+  .doing {
+    background-color: var(--white-color);
+    padding-bottom: 120px;
+  }
+
+  .doing-catalog {
+    margin-right: 24px;
+  }
+
+  .doing-catalog:last-child {
+    margin-right: 0;
+  }
+
+  .doing-card {
+    list-style: none;
+    display: flex;
+  }
+
+  .h-doing {
+    margin-top: 0;
+    margin-bottom: 72px;
+
+    text-align: center;
+    font-weight: var(--font-weight-hh);
+    font-size: var(--font-size-hh);
+    line-height: 1.11;
+    letter-spacing: var(--letter-spacing-p);
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+  }
 }
-
-.doing-catalog:last-child {
-  margin-right: 0;
-}
-
-.doing-card {
-  list-style: none;
-  display: flex;
-}
-
-.h-doing {
-  margin-top: 0;
-  margin-bottom: 72px;
-
-  text-align: center;
-  font-weight: var(--font-weight-hh);
-  font-size: var(--font-size-hh);
-  line-height: 1.11;
-  letter-spacing: var(--letter-spacing-p);
-  text-transform: capitalize;
-  color: var(--navy-blue-color);
-}
-
 /*team*/
-
+/*
 .team {
   background-color: var(--cloud-color);
   padding-top: 120px;
