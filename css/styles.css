@@ -671,6 +671,12 @@ button {
 
 /*doing*/
 
+@media screen and (max-width: 768px) {
+  .doing {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .doing {
     display: none;
