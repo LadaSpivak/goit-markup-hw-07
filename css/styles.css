@@ -485,73 +485,51 @@ button {
     margin-top: 48px;
   }
 }
-/*.hero-section {
-  margin: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  text-align: center;
-
-  background-color: var(--navy-blue-color);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1440px;
-  height: 600px;
-  background-position: center;
-}
-
-.hero-title {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  text-align: center;
-  font-weight: var(--font-weight-hh);
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: var(--letter-spacing-p);
-  color: var(--white-color);
-}
-
-.hero-button {
-  margin-top: 48px;
-
-  padding-bottom: 188px;
-
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 16px 32px;
-  min-width: 169px;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  text-align: center;
-
-  background-color: var(--iris-color);
-  color: var(--white-color);
-
-  transition-duration: 250ms;
-  transition-property: color, background-color, box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button:focus,
-.hero-button:hover {
-  background-color: var(--ocean-color);
-  color: var(--white-color);
-}
-
 /*feature*/
 
+@media screen and (max-width: 768px) {
+  .feature {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .h-feature {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .feature-list {
+  }
+
+  .feature-catalog {
+    margin-bottom: 72px;
+  }
+
+  .feature-catalog:last-child {
+    margin-right: 0;
+  }
+
+  .feature-title {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+
+    margin-bottom: 8px;
+  }
+
+  .feature-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
+/*
+
 .feature {
-  background-color: var(--white-color);
   padding-top: 120px;
   padding-bottom: 120px;
 }
