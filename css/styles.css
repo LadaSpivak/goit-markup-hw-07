@@ -716,6 +716,111 @@ button {
   }
 }
 /*team*/
+
+@media screen and (max-width: 768px) {
+  .team {
+    background-color: var(--cloud-color);
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .team-title {
+    margin-bottom: 72px;
+
+    text-align: center;
+    font-weight: var(--font-weight-hh);
+    font-size: var(--font-size-hh);
+    line-height: 1.11;
+    letter-spacing: var(--letter-spacing-p);
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .team-catalog {
+    margin-right: 0px;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 72px;
+  }
+
+  .team-catalog:last-child {
+    margin-bottom: 0;
+  }
+
+  .team-info {
+    width: 264px;
+    margin-right: 0;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: var(--white-color);
+  }
+
+  .team-name {
+    margin-right: 0;
+
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-weight: var(--font-weight-h);
+    font-size: var(--font-size-h);
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-p);
+    text-align: center;
+    color: var(--navy-blue-color);
+  }
+
+  .team-work {
+    margin-right: 0;
+
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--letter-spacing-p);
+    text-align: center;
+    color: var(--slate-color);
+  }
+
+  .social-link {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-social {
+    display: flex;
+  }
+
+  .card-social-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-social-team:hover,
+  .card-social-team:focus {
+    background-color: var(--ocean-color);
+  }
+}
+
 /*
 .team {
   background-color: var(--cloud-color);
