@@ -1449,6 +1449,32 @@ button {
     color: #ffffff;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .bottom-container {
+    padding-left: 16px;
+    flex-wrap: nowrap;
+  }
+
+  .footer-conteiner {
+    margin-bottom: 0;
+    margin-right: 120px;
+  }
+
+  .join-block {
+    margin-left: 0;
+  }
+
+  .subscribe {
+    margin-left: 80px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
 /*.footer {
   background-color: var(--navy-blue-color);
   padding-top: 100px;
@@ -1456,9 +1482,7 @@ button {
   display: flex;
 }
 
-.bottom-container {
-  display: flex;
-}
+
 
 .studio-botton {
   font-family: "Raleway";
