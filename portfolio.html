@@ -16,7 +16,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/mobile_menu.css" rel="stylesheet" />
+    <link href="./css/container.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -32,13 +34,23 @@
               <a class="nav-item link" href="./index.html">Studio</a>
             </li>
             <li class="nav-list">
-              <a class="nav-item link menu__link__active" href="./portfolio.html">Portfolio</a>
+              <a
+                class="nav-item link menu__link__active"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-list">
               <a class="nav-item link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+
+        <button type="button" class="mobile-menu-open" js-open-menu>
+          <svg class="mobile-menu-open__svg" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-vector"></use>
+          </svg>
+        </button>
 
         <address class="contact">
           <ul class="contact-list list">
@@ -54,10 +66,94 @@
             </li>
           </ul>
         </address>
+
+        <div class="mobile-menu-burger" js-menu-container>
+          <div class="container mobile-menu-container">
+            <button type="button" class="menu-btn" js-close-menu>
+              <svg class="button-icon_menu" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+
+            <ul class="nav-menu list">
+              <li class="nav-list-menu">
+                <a class="nav-item-menu link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-list-menu">
+                <a class="nav-item-menu link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-list-menu">
+                <a class="nav-item-menu link" href="">Contacts</a>
+              </li>
+            </ul>
+
+            <div>
+              <ul class="contact-list-menu list">
+                <li class="contact-catalog-menu">
+                  <a class="contact-item-phone link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="contact-catalog-menu">
+                  <a
+                    class="contact-item-email link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="list social-menu">
+                <li>
+                  <a class="card-social-menu" href="">
+                    <svg class="icon" width="24" height="24">
+                      <use
+                        class="team-icons"
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="card-social-menu" href="">
+                    <svg class="icon" width="24" height="24">
+                      <use
+                        class="team-icons"
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="card-social-menu" href="">
+                    <svg class="icon" width="24" height="24">
+                      <use
+                        class="team-icons"
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="card-social-menu" href="">
+                    <svg class="icon" width="24" height="24">
+                      <use
+                        class="team-icons"
+                        href="./images/icons.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="portfolio">
         <div class="container">
           <h1 hidden>Kind-work</h1>
@@ -208,82 +304,86 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
-      <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container bottom-container">
-      
-        <div class="footer-conteiner">
-          <a class="logo-top link" href=""
-            >Web<span class="studio-botton">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and <br />sales for your business
-            with digital<br />
-            marketing & growth solutions.
-          </p>
-        </div>
+        <div class="footer-join">
+          <div class="footer-conteiner">
+            <a class="logo-top logo-foot link" href=""
+              >Web<span class="studio-botton">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and <br />sales for your business
+              with digital<br />
+              marketing & growth solutions.
+            </p>
+          </div>
 
-        <div class="join-block">
-          <h3 class="social-title">Social media</h3>
-          <ul class="list social-footer">
-            <li class="card-social">
-              <a class="card-social-footer" href="">
-                <svg class="icon" width="24" height="24">
-                  <use
-                    class="team-icons"
-                    href="./images/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-social">
-              <a class="card-social-footer" href="">
-                <svg class="icon" width="24" height="24">
-                  <use
-                    class="team-icons"
-                    href="./images/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-social">
-              <a class="card-social-footer" href="">
-                <svg class="icon" width="24" height="24">
-                  <use
-                    class="team-icons"
-                    href="./images/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="card-social">
-              <a class="card-social-footer" href="">
-                <svg class="icon" width="24" height="24">
-                  <use
-                    class="team-icons"
-                    href="./images/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="join-block">
+            <h3 class="social-title">Social media</h3>
+            <ul class="list social-footer">
+              <li class="card-social">
+                <a class="card-social-footer" href="">
+                  <svg class="icon" width="24" height="24">
+                    <use
+                      class="team-icons"
+                      href="./images/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="card-social">
+                <a class="card-social-footer" href="">
+                  <svg class="icon" width="24" height="24">
+                    <use
+                      class="team-icons"
+                      href="./images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="card-social">
+                <a class="card-social-footer" href="">
+                  <svg class="icon" width="24" height="24">
+                    <use
+                      class="team-icons"
+                      href="./images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="card-social">
+                <a class="card-social-footer" href="">
+                  <svg class="icon" width="24" height="24">
+                    <use
+                      class="team-icons"
+                      href="./images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="subscribe">
           <h3 class="social-title-sb">Subscribe</h3>
           <form class="subscribe-form">
-           <input
+            <input
               type="text"
               class="subscribe-form-input"
               placeholder="E-mail"
-              name="user-subscribe"/>
-              <button type="submit" class="subscribe-form__btn">
-            <span class="join-block__subscribe"> Subscribe</span>
-          </button>
+              name="user-subscribe"
+            />
+            <button type="submit" class="subscribe-form__btn">
+              <span class="join-block__subscribe"> Subscribe</span>
+            </button>
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>
