@@ -11,14 +11,6 @@
   }
 }
 
-/* @media screen and (min-width: 428px) {
-  .container {
-    width: 428px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-} */
-
 @media screen and (min-width: 769px) {
   .container {
     width: 768px;
