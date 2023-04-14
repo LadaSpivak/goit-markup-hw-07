@@ -1991,7 +1991,38 @@ button {
 
 /*portfolio*/
 
-.portfolio {
+@media screen and (max-width: 768px) {
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .button-kind {
+    margin-right: 24px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+
+    background: #f4f4fd;
+    color: var(--iris-color);
+    transition-duration: 250ms;
+    transition-property: color, background-color, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/*.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
   background-color: var(--white-color);
@@ -1999,7 +2030,7 @@ button {
 
 /*filtres*/
 
-.button-list {
+/*button-list {
   list-style: none;
   display: flex;
 
