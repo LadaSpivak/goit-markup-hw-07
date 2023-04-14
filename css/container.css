@@ -3,17 +3,27 @@
   padding-right: 16px;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (max-width: 769px) {
   .container {
-    min-width: 428px;
+    width: 428px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
+/* @media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+} */
+
 @media screen and (min-width: 769px) {
   .container {
     width: 768px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
