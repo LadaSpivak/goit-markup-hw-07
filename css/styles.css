@@ -344,6 +344,7 @@ button {
         url(../images/baner-ph-2x.jpg);
     }
   }
+
   .hero-title {
     margin-top: 0;
     margin-bottom: 0;
@@ -1997,10 +1998,11 @@ button {
     flex-wrap: wrap;
     padding-top: 48px;
     padding-bottom: 48px;
+    row-gap: 16px;
+    column-gap: 24px;
   }
 
   .button-kind {
-    margin-right: 24px;
     border-radius: 4px;
     border: 1px solid transparent;
 
