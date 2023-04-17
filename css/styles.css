@@ -2105,6 +2105,10 @@ button {
     padding-bottom: 120px;
     background-color: var(--white-color);
   }
+
+  .button-list{
+    margin-bottom: 72px;
+  }
 }
 
 /*image*/
@@ -2222,11 +2226,129 @@ button {
   padding-left: 16px;
   padding-right: 16px;
 }
+}
 
+@media screen and (min-width: 768px) {
 
+.cards-set{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}  
+.card-list {
+  margin-bottom: 48px;
+  
 
 }
 
+
+.card-set-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-set-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-set-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris-color);
+  color: var(--white-color);
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+  line-height: 1.5;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing-p);
+}
+
+.card-links {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-links:hover .card-set-text,
+.card-links:focus .card-set-text {
+  transform: translateY(0%);
+}
+
+.card-links:hover,
+.card-links:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.cards-set {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-set-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-weight: var(--font-weight-h);
+  font-size: var(--font-size-h);
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing-p);
+  color: var(--navy-blue-color);
+}
+
+.card-sphere {
+  margin-top: 8px;
+  margin-bottom: 0px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing-p);
+  color: var(--slate-color);
+}
+
+.card-info {
+  border-right: 1px solid var(--cornflower-color);
+  border-bottom: 1px solid var(--cornflower-color);
+  border-left: 1px solid var(--cornflower-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+  .cards-set {
+    justify-content: space-between;
+    gap:0px; 
+  }
+
+  .card-list:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+}
 /*
 .card-list {
   margin-bottom: 48px;
