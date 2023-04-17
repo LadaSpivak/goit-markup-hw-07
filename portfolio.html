@@ -180,7 +180,25 @@
               <a class="card-links link" href=""
                 >
                 <div class="card-set-wrapper">
-              <img class="card-img" src="./images/img4.jpg" alt="banking" width="360" />
+                  <picture >
+                    <source
+                    srcset="./images/img4.jpg 1x, ./images/desk12.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+
+                    <source
+                    srcset="./images/tab1.1x.jpg 1x, ./images/tab1.2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+
+                    <source
+                    srcset="./images/mob1.1x.jpg 1x, ./images/mob1.2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+
+                    <img src="./images/mob1.1x.jpg" alt="" class="picture-image" >
+
+                  </picture>
                <p class="card-set-text">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
               </p> 
@@ -191,7 +209,7 @@
                 </div>
               </a>
             </li>
-            <li class="card-list">
+            <!-- <li class="card-list">
               <a class="card-links link" href=""
                 >
                 <div class="card-set-wrapper"> 
@@ -300,7 +318,7 @@
                 <h2 class="cards-set-title">Fresh Coffee</h2>
                 <p class="card-sphere">Web Site</p></div></a
               >
-            </li>
+            </li> -->
           </ul>  
         </div>
       </section>
